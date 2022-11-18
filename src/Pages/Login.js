@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./Styles.css"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -37,6 +37,7 @@ export const Login = () => {
                 <label>password</label>
                 <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="...password" /><br />
                 <button onClick={submit} type="submit">Login</button><br />
+                <Link to="/signup">click here for create new account</Link>
             </div>
         </div>
     );
