@@ -3,7 +3,7 @@ import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
     { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'seller', headerName: 'Seller', width: 200 },
+    { field: 'status', headerName: 'status', width: 200 },
 
     {
         field: 'product',

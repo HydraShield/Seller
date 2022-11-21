@@ -7,7 +7,7 @@ export const Order = () => {
     const [orders, setOrder] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3030/seller/getProducts")
+        axios.get("http://localhost:3030/seller/getOrder")
             .then((res) => {
                 setOrder(res.data)
             })

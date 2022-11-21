@@ -17,6 +17,7 @@ export const Profile = () => {
             axios.put("http://localhost:3030/seller/updateProfile", { name: name, email: email, contact: contact })
                 .then((res) => {
                     if (res.status === 200) {
+                        alert("Profile Updated")
                         setData({ name: name, email: email, contact: contact })
                     }
                     else {
@@ -24,7 +25,7 @@ export const Profile = () => {
                     }
                 })
         } catch (error) {
-            alert("login fail")
+            alert("update fail")
             console.log(error)
         }
     }
@@ -33,6 +34,9 @@ export const Profile = () => {
         axios.get("http://localhost:3030/seller/profile")
             .then((res) => {
                 setData(res.data)
+                setName(res.data.name)
+                setContact(res.data.contact)
+                setEmail(res.data.email)
             })
     }, []);
     return (

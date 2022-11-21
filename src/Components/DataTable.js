@@ -20,11 +20,11 @@ const columns = [
 
 export default function DataTable({rows}) {
     return (
-        <div className='table' style={{ height: 400, width: '100%' }}>
+        <div className='table' style={{ height: 500, width: '100%' }}>
             <DataGrid
                 rows={rows}
                 columns={columns}
-                pageSize={5}
+                pageSize={7}
                 rowsPerPageOptions={[5]}
                 checkboxSelection
             />

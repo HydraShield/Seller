@@ -15,7 +15,7 @@ export const Login = () => {
             axios.post("http://localhost:3030/seller/login", { email: email, password: password })
                 .then((res) => {
                     if (res.status === 200) {
-                        alert("login pass")
+                        alert("login")
                         navigate("/inventory")
                     }
                     else {

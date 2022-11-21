@@ -9,6 +9,7 @@ export const Inventory = () => {
     useEffect(() => {
         axios.get("http://localhost:3030/seller/getProducts")
             .then((res) => {
+                console.log(res)
                 setItems(res.data)
             })
     }, []);
