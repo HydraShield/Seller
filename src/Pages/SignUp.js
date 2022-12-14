@@ -36,7 +36,7 @@ export const Signup = () => {
     }
 
     return (
-        <div>
+        <div className="login-form">
             <div className="auth-form-container">
                 <h1>SignUp for Seller</h1>
                 <label>Name</label>

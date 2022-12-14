@@ -29,7 +29,7 @@ export const Login = () => {
     }
 
     return (
-        <div>
+        <div className="login-form">
             <div className="auth-form-container">
                 <h1>Login for Seller</h1>
                 <label>Email</label>
